@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
       title: 'Asken Clone',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.lightGreen,
+          seedColor: const Color(
+            0xff87b73f,
+          ),
         ),
         useMaterial3: true,
       ),
@@ -31,35 +33,93 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  bool _showFab = true;
+  bool _showNotch = true;
+  FloatingActionButtonLocation _fabLocation =
+      FloatingActionButtonLocation.endDocked;
+
+  void _onShowNotchChanged(bool value) {
+    setState(() {
+      _showNotch = value;
+    });
+  }
+
+  void _onShowFabChanged(bool value) {
+    setState(() {
+      _showFab = value;
+    });
+  }
+
+  void _onFabLocationChanged(FloatingActionButtonLocation? value) {
+    setState(() {
+      _fabLocation = value ?? FloatingActionButtonLocation.endDocked;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        foregroundColor: Colors.white,
         title: Text(
           widget.title,
-          style: const TextStyle(
-            color: Colors.white,
+        ),
+        leading: const Icon(
+          Icons.menu,
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(
+              Icons.calendar_month,
+            ),
+            tooltip: 'Show Snackbar',
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('This is a snackbar')));
+            },
+          ),
+        ],
+        toolbarHeight: 80,
+        bottom: const PreferredSize(
+          preferredSize: Size.fromHeight(0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Icon(
+                Icons.circle_outlined,
+                color: Colors.white,
+              ),
+              Icon(
+                Icons.circle_outlined,
+                color: Colors.white,
+              ),
+              Icon(
+                Icons.circle_outlined,
+                color: Colors.white,
+              ),
+              Icon(
+                Icons.circle_outlined,
+                color: Colors.white,
+              ),
+              Icon(
+                Icons.circle_outlined,
+                color: Colors.white,
+              ),
+              Icon(
+                Icons.circle_outlined,
+                color: Colors.white,
+              ),
+              Icon(
+                Icons.circle_outlined,
+                color: Colors.white,
+              ),
+            ],
           ),
         ),
       ),
       body: const Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
         child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[],
         ),
@@ -68,7 +128,80 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () {},
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
+      bottomNavigationBar: _DemoBottomAppBar(
+        fabLocation: _fabLocation,
+        shape: _showNotch ? const CircularNotchedRectangle() : null,
+      ),
+    );
+  }
+}
+
+class _DemoBottomAppBar extends StatelessWidget {
+  const _DemoBottomAppBar({
+    this.fabLocation = FloatingActionButtonLocation.endDocked,
+    this.shape = const CircularNotchedRectangle(),
+  });
+
+  final FloatingActionButtonLocation fabLocation;
+  final NotchedShape? shape;
+
+  static final List<FloatingActionButtonLocation> centerLocations =
+      <FloatingActionButtonLocation>[
+    FloatingActionButtonLocation.centerDocked,
+    FloatingActionButtonLocation.centerFloat,
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return BottomAppBar(
+      shape: shape,
+      color: Colors.white,
+      child: IconTheme(
+        data: IconThemeData(color: Theme.of(context).colorScheme.onPrimary),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            IconButton(
+              tooltip: 'Open navigation menu',
+              icon: const Icon(
+                Icons.home,
+                color: Colors.grey,
+                size: 40,
+              ),
+              onPressed: () {},
+            ),
+            if (centerLocations.contains(fabLocation)) const Spacer(),
+            IconButton(
+              tooltip: 'Search',
+              icon: const Icon(
+                Icons.people_outline,
+                color: Colors.grey,
+                size: 40,
+              ),
+              onPressed: () {},
+            ),
+            IconButton(
+              tooltip: 'Favorite',
+              icon: const Icon(
+                Icons.chat_outlined,
+                color: Colors.grey,
+                size: 40,
+              ),
+              onPressed: () {},
+            ),
+            IconButton(
+              tooltip: 'Search',
+              icon: const Icon(
+                Icons.favorite,
+                color: Colors.grey,
+                size: 40,
+              ),
+              onPressed: () {},
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
