@@ -10,14 +10,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Asken Clone',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.lightGreen,
-          ),
-          useMaterial3: true,
+      title: 'Asken Clone',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.lightGreen,
         ),
-        home: const MyHomePage(title: '2024年 1月'));
+        useMaterial3: true,
+      ),
+      home: const MyHomePage(title: '2024年 1月'),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
 
