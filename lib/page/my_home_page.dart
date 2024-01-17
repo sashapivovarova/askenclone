@@ -41,7 +41,11 @@ class _MyHomePageState extends State<MyHomePage> {
           child: AppbarBottom(),
         ),
       ),
-      body: const Body(),
+      body: Container(
+        width: 400,
+        color: const Color(0xfff1ece4),
+        child: const Body(),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         tooltip: 'Increment',
