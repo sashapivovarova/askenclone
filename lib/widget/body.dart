@@ -146,6 +146,259 @@ class Body extends StatelessWidget {
               ],
             ),
           ),
+          Container(
+            alignment: Alignment.center,
+            color: Colors.white,
+            height: 8,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(width: 80, color: Colors.green),
+                Container(width: 80, color: Colors.green),
+                Container(width: 80, color: Colors.orange),
+              ],
+            ),
+          ),
+          Container(
+            alignment: Alignment.center,
+            color: Colors.white,
+            height: 40,
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                SizedBox(
+                  width: 30,
+                  child: Text(
+                    "適正",
+                    style: TextStyle(color: Colors.green),
+                  ),
+                ),
+                SizedBox(
+                  width: 30,
+                  child: Text(
+                    "適正",
+                    style: TextStyle(color: Colors.green),
+                  ),
+                ),
+                Row(
+                  children: [
+                    SizedBox(
+                      width: 30,
+                      child: Text(
+                        "あと",
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                    ),
+                    Text(
+                      "31g",
+                      style: TextStyle(
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Container(
+            alignment: Alignment.center,
+            width: 300,
+            color: const Color(0xff039811),
+            child: const Text(
+              '朝 昼 夜 アドバイス',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "     カラダ記録",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+          const Divider(
+            height: 1,
+            thickness: 1,
+            color: Colors.grey,
+          ),
+          Container(
+            alignment: Alignment.center,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "記録",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "     昼食",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+          const Divider(
+            height: 1,
+            thickness: 1,
+            color: Colors.grey,
+          ),
+          Container(
+            alignment: Alignment.center,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "解析",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "     夕食",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+          const Divider(
+            height: 1,
+            thickness: 1,
+            color: Colors.grey,
+          ),
+          Container(
+            alignment: Alignment.center,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "解析",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "     間食",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+          const Divider(
+            height: 1,
+            thickness: 1,
+            color: Colors.grey,
+          ),
+          Container(
+            alignment: Alignment.center,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "解析",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "     運動",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+          const Divider(
+            height: 1,
+            thickness: 1,
+            color: Colors.grey,
+          ),
+          Container(
+            alignment: Alignment.center,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "記録",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "     日記",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+          const Divider(
+            height: 1,
+            thickness: 1,
+            color: Colors.grey,
+          ),
+          Container(
+            alignment: Alignment.center,
+            color: Colors.white,
+            height: 40,
+            child: const Text(
+              "記録",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+          ),
         ],
       ),
     );
