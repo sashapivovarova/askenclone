@@ -5,36 +5,43 @@ class AppbarBottom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
+    return const Column(
       children: [
-        Icon(
-          Icons.circle_outlined,
-          color: Colors.white,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Icon(
+              Icons.circle_outlined,
+              color: Colors.white,
+            ),
+            Icon(
+              Icons.circle_outlined,
+              color: Colors.white,
+            ),
+            Icon(
+              Icons.circle_outlined,
+              color: Colors.white,
+            ),
+            Icon(
+              Icons.circle_outlined,
+              color: Colors.white,
+            ),
+            Icon(
+              Icons.circle_outlined,
+              color: Colors.white,
+            ),
+            Icon(
+              Icons.circle_outlined,
+              color: Colors.white,
+            ),
+            Icon(
+              Icons.circle_outlined,
+              color: Colors.white,
+            ),
+          ],
         ),
-        Icon(
-          Icons.circle_outlined,
-          color: Colors.white,
-        ),
-        Icon(
-          Icons.circle_outlined,
-          color: Colors.white,
-        ),
-        Icon(
-          Icons.circle_outlined,
-          color: Colors.white,
-        ),
-        Icon(
-          Icons.circle_outlined,
-          color: Colors.white,
-        ),
-        Icon(
-          Icons.circle_outlined,
-          color: Colors.white,
-        ),
-        Icon(
-          Icons.circle_outlined,
-          color: Colors.white,
+        SizedBox(
+          height: 5,
         ),
       ],
     );

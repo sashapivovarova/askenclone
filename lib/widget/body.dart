@@ -130,70 +130,74 @@ class Body extends StatelessWidget {
           Container(
             alignment: Alignment.center,
             color: Colors.white,
-            height: 40,
-            child: const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Text(
-                  "たんぱく質",
-                ),
-                Text(
-                  "脂肪",
-                ),
-                Text(
-                  "炭水化物",
-                ),
-              ],
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            color: Colors.white,
-            height: 8,
+            height: 70,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Container(width: 80, color: Colors.green),
-                Container(width: 80, color: Colors.green),
-                Container(width: 80, color: Colors.orange),
-              ],
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            color: Colors.white,
-            height: 40,
-            child: const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                SizedBox(
-                  width: 30,
-                  child: Text(
-                    "適正",
-                    style: TextStyle(color: Colors.green),
-                  ),
-                ),
-                SizedBox(
-                  width: 30,
-                  child: Text(
-                    "適正",
-                    style: TextStyle(color: Colors.green),
-                  ),
-                ),
-                Row(
+                Column(
                   children: [
-                    SizedBox(
-                      width: 30,
-                      child: Text(
-                        "あと",
-                        style: TextStyle(color: Colors.blue),
-                      ),
+                    const SizedBox(
+                      height: 10,
                     ),
-                    Text(
-                      "31g",
-                      style: TextStyle(
-                        color: Colors.blue,
-                      ),
+                    const Text(
+                      "たんぱく質",
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Container(
+                      width: 90,
+                      height: 5,
+                      color: Colors.green,
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      "適正",
+                      style: TextStyle(color: Colors.green),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    const Text(
+                      "脂肪",
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Container(width: 90, height: 5, color: Colors.green),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      "適正",
+                      style: TextStyle(color: Colors.green),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    const Text(
+                      "炭水化物",
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Container(width: 90, height: 5, color: Colors.orange),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      "あと 31g",
+                      style: TextStyle(color: Colors.blue),
                     ),
                   ],
                 ),
