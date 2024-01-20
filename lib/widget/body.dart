@@ -223,13 +223,33 @@ class Body extends StatelessWidget {
           Container(
             alignment: Alignment.topLeft,
             color: Colors.white,
-            height: 40,
-            child: const Text(
-              "     カラダ記録",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w400,
-              ),
+            height: 60,
+            child: Row(
+              children: [
+                const SizedBox(
+                  width: 5,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: const BoxDecoration(
+                    color: Color(0xff87b73f),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.favorite,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
+                const Text(
+                  " カラダ記録",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
           ),
           const Divider(
@@ -241,11 +261,21 @@ class Body extends StatelessWidget {
             alignment: Alignment.center,
             color: Colors.white,
             height: 40,
-            child: const Text(
-              "記録",
-              style: TextStyle(
-                fontSize: 20,
-              ),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.brush_outlined,
+                  color: Colors.green,
+                  size: 20,
+                ),
+                Text(
+                  " 記録",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+              ],
             ),
           ),
           const SizedBox(
@@ -254,13 +284,33 @@ class Body extends StatelessWidget {
           Container(
             alignment: Alignment.topLeft,
             color: Colors.white,
-            height: 40,
-            child: const Text(
-              "     昼食",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w400,
-              ),
+            height: 60,
+            child: Row(
+              children: [
+                const SizedBox(
+                  width: 5,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: const BoxDecoration(
+                    color: Color(0xff87b73f),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.sunny_snowing,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
+                const Text(
+                  " 朝食",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
           ),
           const Divider(
@@ -272,11 +322,21 @@ class Body extends StatelessWidget {
             alignment: Alignment.center,
             color: Colors.white,
             height: 40,
-            child: const Text(
-              "解析",
-              style: TextStyle(
-                fontSize: 20,
-              ),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.brush_outlined,
+                  color: Colors.green,
+                  size: 20,
+                ),
+                Text(
+                  " 記録",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+              ],
             ),
           ),
           const SizedBox(
@@ -285,13 +345,33 @@ class Body extends StatelessWidget {
           Container(
             alignment: Alignment.topLeft,
             color: Colors.white,
-            height: 40,
-            child: const Text(
-              "     夕食",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w400,
-              ),
+            height: 60,
+            child: Row(
+              children: [
+                const SizedBox(
+                  width: 5,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: const BoxDecoration(
+                    color: Color(0xff87b73f),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.sunny,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
+                const Text(
+                  " 昼食",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
           ),
           const Divider(
@@ -303,11 +383,21 @@ class Body extends StatelessWidget {
             alignment: Alignment.center,
             color: Colors.white,
             height: 40,
-            child: const Text(
-              "解析",
-              style: TextStyle(
-                fontSize: 20,
-              ),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.brush_outlined,
+                  color: Colors.green,
+                  size: 20,
+                ),
+                Text(
+                  " 記録",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+              ],
             ),
           ),
           const SizedBox(
@@ -316,13 +406,33 @@ class Body extends StatelessWidget {
           Container(
             alignment: Alignment.topLeft,
             color: Colors.white,
-            height: 40,
-            child: const Text(
-              "     間食",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w400,
-              ),
+            height: 60,
+            child: Row(
+              children: [
+                const SizedBox(
+                  width: 5,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: const BoxDecoration(
+                    color: Color(0xff87b73f),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.nightlight_round,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
+                const Text(
+                  " 夕食",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
           ),
           const Divider(
@@ -334,11 +444,21 @@ class Body extends StatelessWidget {
             alignment: Alignment.center,
             color: Colors.white,
             height: 40,
-            child: const Text(
-              "解析",
-              style: TextStyle(
-                fontSize: 20,
-              ),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.brush_outlined,
+                  color: Colors.green,
+                  size: 20,
+                ),
+                Text(
+                  " 記録",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+              ],
             ),
           ),
           const SizedBox(
@@ -347,13 +467,33 @@ class Body extends StatelessWidget {
           Container(
             alignment: Alignment.topLeft,
             color: Colors.white,
-            height: 40,
-            child: const Text(
-              "     運動",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w400,
-              ),
+            height: 60,
+            child: Row(
+              children: [
+                const SizedBox(
+                  width: 5,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: const BoxDecoration(
+                    color: Color(0xff87b73f),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.coffee_rounded,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
+                const Text(
+                  " 間食",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
           ),
           const Divider(
@@ -365,11 +505,21 @@ class Body extends StatelessWidget {
             alignment: Alignment.center,
             color: Colors.white,
             height: 40,
-            child: const Text(
-              "記録",
-              style: TextStyle(
-                fontSize: 20,
-              ),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.brush_outlined,
+                  color: Colors.green,
+                  size: 20,
+                ),
+                Text(
+                  " 記録",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+              ],
             ),
           ),
           const SizedBox(
@@ -378,13 +528,33 @@ class Body extends StatelessWidget {
           Container(
             alignment: Alignment.topLeft,
             color: Colors.white,
-            height: 40,
-            child: const Text(
-              "     日記",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w400,
-              ),
+            height: 60,
+            child: Row(
+              children: [
+                const SizedBox(
+                  width: 5,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: const BoxDecoration(
+                    color: Color(0xff87b73f),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.sports_gymnastics_rounded,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
+                const Text(
+                  " 運動",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
           ),
           const Divider(
@@ -396,12 +566,86 @@ class Body extends StatelessWidget {
             alignment: Alignment.center,
             color: Colors.white,
             height: 40,
-            child: const Text(
-              "記録",
-              style: TextStyle(
-                fontSize: 20,
-              ),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.brush_outlined,
+                  color: Colors.green,
+                  size: 20,
+                ),
+                Text(
+                  " 記録",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+              ],
             ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            color: Colors.white,
+            height: 60,
+            child: Row(
+              children: [
+                const SizedBox(
+                  width: 5,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: const BoxDecoration(
+                    color: Color(0xff87b73f),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.my_library_books_rounded,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
+                const Text(
+                  " 日記",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const Divider(
+            height: 1,
+            thickness: 1,
+            color: Colors.grey,
+          ),
+          Container(
+            alignment: Alignment.center,
+            color: Colors.white,
+            height: 40,
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.brush_outlined,
+                  color: Colors.green,
+                  size: 20,
+                ),
+                Text(
+                  " 記録",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
           ),
         ],
       ),
