@@ -37,7 +37,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
         toolbarHeight: 80,
         bottom: const PreferredSize(
-          preferredSize: Size.fromHeight(0),
+          preferredSize: Size.fromHeight(
+            80,
+          ),
           child: AppbarBottom(),
         ),
       ),

@@ -1,7 +1,17 @@
+// ignore_for_file: must_be_immutable
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Body extends StatelessWidget {
+class Body extends StatefulWidget {
   const Body({super.key});
+
+  @override
+  State<Body> createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
+  bool switchValue = false;
 
   @override
   Widget build(BuildContext context) {
@@ -9,30 +19,6 @@ class Body extends StatelessWidget {
       scrollDirection: Axis.vertical,
       child: Column(
         children: [
-          Container(
-            alignment: Alignment.center,
-            height: 30,
-            child: const Text(
-              '1月15日(月)',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            color: const Color(0xfff9692f),
-            child: const Text(
-              'まずは7日目チャレンジ挑戦中!',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
           const Padding(
             padding: EdgeInsets.symmetric(
               vertical: 5,
@@ -323,18 +309,37 @@ class Body extends StatelessWidget {
             color: Colors.white,
             height: 40,
             child: const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Icon(
-                  Icons.brush_outlined,
-                  color: Colors.green,
-                  size: 20,
+                Row(
+                  children: [
+                    Icon(
+                      Icons.camera_alt_outlined,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                    Text(
+                      " 解析",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
                 ),
-                Text(
-                  " 記録",
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.barcode_reader,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                    Text(
+                      " バーコード",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -384,18 +389,37 @@ class Body extends StatelessWidget {
             color: Colors.white,
             height: 40,
             child: const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Icon(
-                  Icons.brush_outlined,
-                  color: Colors.green,
-                  size: 20,
+                Row(
+                  children: [
+                    Icon(
+                      Icons.camera_alt_outlined,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                    Text(
+                      " 解析",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
                 ),
-                Text(
-                  " 記録",
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.barcode_reader,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                    Text(
+                      " バーコード",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -445,18 +469,37 @@ class Body extends StatelessWidget {
             color: Colors.white,
             height: 40,
             child: const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Icon(
-                  Icons.brush_outlined,
-                  color: Colors.green,
-                  size: 20,
+                Row(
+                  children: [
+                    Icon(
+                      Icons.camera_alt_outlined,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                    Text(
+                      " 解析",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
                 ),
-                Text(
-                  " 記録",
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.barcode_reader,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                    Text(
+                      " バーコード",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -506,18 +549,37 @@ class Body extends StatelessWidget {
             color: Colors.white,
             height: 40,
             child: const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Icon(
-                  Icons.brush_outlined,
-                  color: Colors.green,
-                  size: 20,
+                Row(
+                  children: [
+                    Icon(
+                      Icons.camera_alt_outlined,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                    Text(
+                      " 解析",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
                 ),
-                Text(
-                  " 記録",
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.barcode_reader,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                    Text(
+                      " バーコード",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -530,29 +592,52 @@ class Body extends StatelessWidget {
             color: Colors.white,
             height: 60,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const SizedBox(
-                  width: 5,
+                Row(
+                  children: [
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    Container(
+                      width: 50,
+                      height: 50,
+                      decoration: const BoxDecoration(
+                        color: Color(0xff87b73f),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.sports_gymnastics_rounded,
+                        color: Colors.white,
+                        size: 30,
+                      ),
+                    ),
+                    const Text(
+                      " 運動",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ],
                 ),
-                Container(
-                  width: 50,
-                  height: 50,
-                  decoration: const BoxDecoration(
-                    color: Color(0xff87b73f),
-                    shape: BoxShape.circle,
-                  ),
-                  child: const Icon(
-                    Icons.sports_gymnastics_rounded,
-                    color: Colors.white,
-                    size: 30,
-                  ),
-                ),
-                const Text(
-                  " 運動",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w400,
-                  ),
+                Row(
+                  children: [
+                    const Text(
+                      "歩数を自動記録",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    CupertinoSwitch(
+                      value: switchValue,
+                      onChanged: (bool? value) {
+                        setState(() {
+                          switchValue = value ?? false;
+                        });
+                      },
+                    ),
+                  ],
                 ),
               ],
             ),
